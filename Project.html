@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Project.css">
+    <title>Projects</title>
+</head>
+<body>
+    <div class="background-canvas">
+        <canvas id="stars"></canvas>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About Me</a>
+        <a href="Project.html">Projects</a>
+        <a href="Contact.html">Contact Me</a>
+    </div>
+
+    <div class="content">
+        <div class="section" id="Main-Project">
+            <h2>Gym Application Management App</h2>
+            <p>
+                In this project, I had the opportunity to work with my partner. After finding a client and analyzing their problem, we identified the main issue they were facing. The gym was handling all of its operations on paper, which made it difficult to track who owed money and access important client information. Additionally, new clients were also registered on paper, which we felt was outdated. Therefore, my partner and I decided to create an app for the gym.
+            </p>
+            <p>
+                At first, we were unsure which tools to use, but after some research, we decided to use .NET, as it was ideal for cross-platform development. This would allow the gym to use the app on both Mac and Windows. We divided the tasks, with my teammate focusing on the backend, as he was more familiar with .NET, and I worked on the front end. Although I primarily worked on the front end, I also assisted my teammate with the backend.
+            </p>
+            <p>
+                The main purpose of the app was to make the gym employees' work easier. We designed a fully customized app based on the gym's needs. For example, the app includes a section to track all the gym members, a section for employees, and a section for employee tasks. Additionally, we implemented features requested by the gym owner, such as a notification on the main page to alert when a member owes money for a month or when a membership is about to expire. We also created a login system with different permissions, allowing the admin to add or delete employees.
+            </p>
+            <p>
+                Finally, we integrated a QR code scanning feature. When new users scanned their QR cards, employees could easily identify them and access their information. We also added a feature for employees to create new members in the app, making the process simpler for them.
+            </p>
+            <p>
+                For the front end, I initially designed a mockup using Figma, which we showed to the gym owner. After the gym owner approved the design, I started working on the development.
+            </p>
+            <a href="https://www.figma.com/proto/5DvAK96IyX3XTuZStXzoPZ/Gym-Application-UI?node-id=0-1&t=YQeKNXlBbEgT3R5j-1" class="figma-link" target="_blank">View Figma Prototype</a>
+        </div>
+        
+        <div class="section" id="Bomba-Projects">
+            <h2>Bomba Johnny Game</h2>
+            <p>
+                Currently, I’m working on a horror maze-running FPS game called <strong>Bomba Jhonny</strong>, which will soon be available on Steam. Players navigate a maze filled with traps and enemies, progressing through increasingly challenging levels.
+            </p>
+            <p>
+                My role in this Unity-based project includes designing menu systems like the options menu and pause menu. Our team is aiming to finalize the game by the end of 2025, though it could be released earlier if progress remains steady.
+            </p>
+            <div class="image-gallery">
+                <button class="scroll-btn left" id="left-arrow">&#8592;</button>
+                <div class="gallery-container" id="gallery-container">
+                    <img src="Images/game0.png" alt="Image 1" class="gallery-image">
+                    <img src="Images/game1.png" alt="Image 2" class="gallery-image">
+                    <img src="Images/game2.png" alt="Image 3" class="gallery-image">
+                    <img src="Images/game3.png" alt="Image 4" class="gallery-image">
+                    <img src="Images/game5.png" alt="Image 6" class="gallery-image">
+                    <img src="Images/game6.png" alt="Image 7" class="gallery-image">
+                    <img src="Images/game7.png" alt="Image 8" class="gallery-image">
+                    <img src="Images/game8.png" alt="Image 9" class="gallery-image">
+                </div>
+                <button class="scroll-btn right" id="right-arrow">&#8594;</button>
+            </div>
+        </div>
+        <div class="section" id="Other-Projects">
+            <h2>Other Projects</h2>
+            <p>
+                Throughout my DEC at Vanier College, I worked on various projects, mainly using C#. I also developed applications in PHP, HTML, CSS, JavaScript, and Unity, gaining experience in both individual and collaborative environments.
+            </p>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Large Image">
+            <button class="prev">&#8592;</button>
+            <button class="next">&#8594;</button>
+        </div>
+    </div>
+    
+    <script src="Js/animation.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
